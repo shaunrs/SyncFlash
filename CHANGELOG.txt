@@ -1,0 +1,27 @@
+2012-01-14
+
+ Check that another powershell process is not running before starting the backup service
+ Ignore Junction Points in RoboCopy, otherwise we struggle copying "My Documents"
+
+TODO
+
+ Allow copy of main drive, without recycle bin and ignoring system & hidden attribute
+ Tidy up log output
+ Add log line to show when file list / backup occurs seperately
+ Add try/catch blocks around file reads in compareFiles()
+ Add path variable for the transaction logfile
+ Add 'click baloon to see logfile' on completion.
+ General code tidyup
+
+ Look into: how to leave app icon in tray, click to see last backup
+
+2011-04-20
+
+ compareFiles Test-Path added -literalPath for [] in filenames
+ Convert out-host back to write-host using Start-Transcript, with `r`n
+
+2011-04-19
+
+ Convert write-host to out-host for newline in Start_transcript
+ Start-Transcript added for each backup run
+ Event logging improvements for transcript
